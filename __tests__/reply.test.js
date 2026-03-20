@@ -22,7 +22,7 @@ describe('buildReplyMessage', () => {
 
   test('returns fallback text for unknown keyword', async () => {
     const message = await buildReplyMessage('อยากไปเที่ยว');
-    expect(message).toEqual({ type: 'text', text: 'ฉันไม่เข้าใจ' });
+    expect(message).toEqual({ type: 'text', text: 'ขอโทษนะคะ ไม่เข้าใจเลย ลองพูดใหม่ได้เลยค่ะ 😊' });
   });
 
   test('uses fallback menu list', async () => {
